@@ -1,0 +1,14 @@
+services:
+  mysql:
+    container_name: flow
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=flow
+      - MYSQL_USER=local
+      - MYSQL_PASSWORD=localpassword
+      - MYSQL_ROOT_PASSWORD=localpassword
