@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /flow-back
+  - source: /
     destination: /home/ubuntu/project
     overwrite: yes
 permissions:
@@ -13,6 +13,6 @@ permissions:
     mode: 777
 hooks:
   ApplicationStart:
-    - location: /flow-back/scripts/deploy.sh
+    - location: scripts/deploy.sh
       timeout: 600
       runas: root
