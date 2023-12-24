@@ -5,13 +5,8 @@ spring:
     password: localpassword
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-
-  sql:
-    init:
-      mode: always
-
   jpa:
-    defer-datasource-initialization: true
+#    defer-datasource-initialization: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate.ddl-auto: update
