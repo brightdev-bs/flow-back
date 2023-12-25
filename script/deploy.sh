@@ -27,3 +27,5 @@ echo "> DEPLOY_JAR 배포"
 nohup java -jar \
     -Dspring.profiles.active=prod \
     $DEPLOY_JAR > ./nohup.out 2>&1 &
+
+echo "> deploy 완료"
