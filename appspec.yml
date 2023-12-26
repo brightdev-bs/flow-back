@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/project/backend
+    destination: /home/ubuntu/project
     overwrite: yes
 permissions:
   - object: /
