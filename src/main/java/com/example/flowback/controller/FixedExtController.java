@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/extensions/fixed")
+@RequestMapping("/api/extensions/fixed")
 @RequiredArgsConstructor
 @RestController
 public class FixedExtController {
